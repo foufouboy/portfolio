@@ -1,6 +1,6 @@
 function Projects() {
   return (
-    <div id="projects" className="bg-slate-500">
+    <div id="projects" className="">
       Projects
     </div>
   );

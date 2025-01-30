@@ -5,7 +5,7 @@ function Hero() {
   return (
     <div
       id="hero"
-      className="bg-primary-bg text-primary flex h-full flex-col items-center justify-center text-center"
+      className="bg-primary-bg text-primary relative flex h-screen flex-col items-center justify-center px-1 text-center"
     >
       <ParticlesAnimation />
       <h1 className="font-display z-5 text-4xl font-light sm:text-5xl md:text-6xl lg:text-7xl">
@@ -17,10 +17,10 @@ function Hero() {
         </div>
       </h1>
       <a
-        href="https://youtu.be/dQw4w9WgXcQ?si=3fn3V3iPij7hgjAj"
-        className="animation-delay-1400 animate-bottom-in border-primary-red text-primary-red mt-4 rounded-sm border-2 border-solid px-4 py-2 text-xl text-[1rem] sm:text-[1.2rem] md:text-[1.3rem]"
+        href="#about"
+        className="animation-delay-1400 animate-bottom-in border-primary-red text-primary-red hover:text-dark-red hover:border-dark-red mt-4 rounded-sm border-2 border-solid px-5 py-2 text-xl text-[1rem] transition-colors duration-500 sm:text-[1.2rem] md:text-[1.3rem]"
       >
-        View my work <span className="text-primary-red">↓</span>
+        View my work <span>↓</span>
       </a>
     </div>
   );

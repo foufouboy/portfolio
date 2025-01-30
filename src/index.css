@@ -8,8 +8,9 @@
 
 @theme {
   --font-display: "Inter", "system-ui", sans-serif;
-  --color-primary: #fff;
+  --color-primary: #fafafa;
   --color-primary-red: #ff4d5a;
+  --color-dark-red: #bb3741;
   --color-primary-purple: #3216bb;
   --color-primary-bg: #1a1a1a;
   --color-nav-bg: #272727;
@@ -56,13 +57,19 @@
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   box-sizing: border-box;
 }
 
 #root {
-  height: 100vh;
   font-family: "Inter", "system-ui", sans-serif;
+  color: var(--color-primary);
+  background: linear-gradient(0deg, var(--color-primary-bg), black 50%)
+    no-repeat;
 }
 
 #tsparticles {
