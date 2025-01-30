@@ -14,18 +14,8 @@ function ParticlesAnimation() {
     });
   }, []);
 
-  const particlesLoaded = (container) => {
-    console.log(container);
-  };
-
   if (init) {
-    return (
-      <Particles
-        id="tsparticles"
-        particlesLoaded={particlesLoaded}
-        options={options}
-      />
-    );
+    return <Particles id="tsparticles" options={options} />;
   }
 
   return <></>;
