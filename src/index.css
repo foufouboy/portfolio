@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import "tailwindcss";
+@plugin "tailwindcss-animation-delay";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@theme {
+  --font-display: "Inter", "system-ui", sans-serif;
+  --color-primary: #fff;
+  --color-primary-red: #ff4d5a;
+  --color-primary-purple: #3216bb;
+  --color-primary-bg: #1a1a1a;
+  --color-nav-bg: #272727;
+
+  --animate-slide-from-left: slide-from-left 1.4s
+    cubic-bezier(0.21, 1.11, 0.81, 0.99);
+
+  @keyframes slide-from-left {
+    0% {
+      transform: translateX(-30%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  --animate-slide-from-right: slide-from-right 1.4s
+    cubic-bezier(0.21, 1.11, 0.81, 0.99);
+
+  @keyframes slide-from-right {
+    0% {
+      transform: translateX(30%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  --animate-bottom-in: bottom-in 1.4s cubic-bezier(0.21, 1.11, 0.81, 0.99) both;
+
+  @keyframes bottom-in {
+    0% {
+      transform: translateY(60%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#root {
+  height: 100vh;
+  font-family: "Inter", "system-ui", sans-serif;
+}
+
+#tsparticles {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+}
