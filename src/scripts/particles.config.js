@@ -1,13 +1,7 @@
 export default {
   autoPlay: true,
   background: {
-    color: {
-      value: "#000",
-    },
-    image: "",
-    position: "",
-    repeat: "",
-    size: "",
+    image: "linear-gradient(0deg, var(--color-primary-bg), black 50%)",
     opacity: 1,
   },
   backgroundMask: {
