@@ -8,6 +8,7 @@
 
 @theme {
   --font-display: "Inter", "system-ui", sans-serif;
+
   --color-primary: #fafafa;
   --color-primary-red: #ff4d5a;
   --color-dark-red: #bb3741;
@@ -16,6 +17,12 @@
   --color-nav-bg: #272727;
   --color-primary-gradient: linear-gradient(135deg, #12cbc4 10%, #c4e538 100%);
 
+  --text-p: 0.9rem;
+  --text-p-small: 1rem;
+  --text-p-md: 1.1rem;
+  --text-p-lg: 1.2rem;
+
+  /* ANIMATIONS */
   --animate-slide-from-left: slide-from-left 1.4s
     cubic-bezier(0.21, 1.11, 0.81, 0.99);
 
@@ -62,6 +69,11 @@ html {
   scroll-behavior: smooth;
 }
 
+p,
+li {
+  @apply text-p sm:text-p-small md:text-p-md lg:text-p-lg;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -69,7 +81,7 @@ html {
 #root {
   font-family: "Inter", "system-ui", sans-serif;
   color: var(--color-primary);
-  background: linear-gradient(0deg, var(--color-primary-bg), black 50%)
+  background: linear-gradient(0deg, var(--color-primary-bg), black 80%)
     no-repeat;
   display: grid;
   grid-template-columns: 1fr;
@@ -78,13 +90,6 @@ html {
 #tsparticles {
   position: absolute;
   width: 100%;
-  height: 100vh;
-}
-
-#section_1 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   height: 100vh;
 }
 

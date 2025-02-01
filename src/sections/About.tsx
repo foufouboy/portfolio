@@ -4,17 +4,17 @@ import { skills } from "../scripts/data";
 
 function About() {
   return (
-    <div id="about" className="flex flex-col px-[10%]">
-      <Subtitle text="About" classes="my-14 width-[fit-content] self-center" />
+    <div id="about" className="flex flex-col items-center">
+      <Subtitle text="About" />
       <div className="profile flex flex-col items-center">
-        <div className="profile-picture to-primary-red mb-9 flex h-36 w-36 items-center justify-center rounded-full bg-linear-to-br from-blue-600">
+        <div className="profile-picture to-primary-red mb-9 flex h-[10rem] w-[10rem] items-center justify-center rounded-full bg-linear-to-br from-blue-600 md:h-[11rem] md:w-[11rem] lg:h-[14rem] lg:w-[14rem]">
           <img
             src={profileImg}
             alt="profile picture"
-            className="w-[93%] rounded-full"
+            className="h-[95%] w-auto rounded-full"
           />
         </div>
-        <p className="whoami mb-9">
+        <p className="whoami mb-9 w-[80vw] sm:w-[500px]">
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt
           molestiae animi maxime aspernatur maiores vel cum. Ipsum quae incidunt
           assumenda ad odio, vitae distinctio laudantium dignissimos eligendi

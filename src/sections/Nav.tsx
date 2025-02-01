@@ -4,7 +4,7 @@ import { useState } from "react";
 
 function Nav({ visibleSection }) {
   return (
-    <nav className="shadow-3xl sticky top-0 z-999 overflow-hidden">
+    <nav className="sticky top-0 z-999 overflow-hidden shadow-lg shadow-slate-900">
       <ul className="bg-nav-bg flex justify-center gap-5 py-4">
         {navItems.map((item) => {
           return (
