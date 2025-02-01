@@ -4,7 +4,7 @@ import { skills } from "../scripts/data";
 
 function About() {
   return (
-    <div id="about" className="flex h-screen flex-col px-[10%]">
+    <div id="about" className="flex flex-col px-[10%]">
       <Subtitle text="About" classes="my-14 width-[fit-content] self-center" />
       <div className="profile flex flex-col items-center">
         <div className="profile-picture to-primary-red mb-9 flex h-36 w-36 items-center justify-center rounded-full bg-linear-to-br from-blue-600">
