@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useInView, InView } from "react-intersection-observer";
 
 import About from "./sections/About";
 import Projects from "./sections/Projects";
@@ -9,17 +10,40 @@ import Nav from "./sections/Nav";
 
 import "./index.css";
 
+const sections = [<Hero />, <About />, <Projects />, <Around />, <Contact />];
+
 function App() {
-  const [count, setCount] = useState(0);
+  const { ref, inView } = useInView({
+    threshold: 0.8,
+  });
+
+  const [visibleSection, setVisibleSection] = useState("#hero");
+
+  const setInView = (inView, entry) => {
+    if (inView) {
+      console.log(entry.target.firstChild.getAttribute("id"));
+      setVisibleSection(entry.target.firstChild.getAttribute("id"));
+    }
+  };
 
   return (
     <>
-      <Hero />
-      <Nav />
-      <About />
-      <Projects />
-      <Around />
-      <Contact />
+      {sections.map((section, index) => (
+        <InView
+          onChange={setInView}
+          threshold={0.8}
+          key={`section_${index + 1}`}
+        >
+          {({ ref }) => {
+            return (
+              <div id={`section_${index + 1}`} ref={ref}>
+                {section}
+              </div>
+            );
+          }}
+        </InView>
+      ))}
+      <Nav visibleSection={visibleSection} />
     </>
   );
 }

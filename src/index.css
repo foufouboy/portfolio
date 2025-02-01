@@ -14,6 +14,7 @@
   --color-primary-purple: #3216bb;
   --color-primary-bg: #1a1a1a;
   --color-nav-bg: #272727;
+  --color-primary-gradient: linear-gradient(135deg, #12cbc4 10%, #c4e538 100%);
 
   --animate-slide-from-left: slide-from-left 1.4s
     cubic-bezier(0.21, 1.11, 0.81, 0.99);
@@ -70,10 +71,16 @@ html {
   color: var(--color-primary);
   background: linear-gradient(0deg, var(--color-primary-bg), black 50%)
     no-repeat;
+  display: grid;
+  grid-template-columns: 1fr;
 }
 
 #tsparticles {
   position: absolute;
   width: 100%;
   height: 100vh;
+}
+
+nav {
+  grid-row: 2 / 3;
 }
