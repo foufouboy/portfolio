@@ -5,7 +5,7 @@ function Hero() {
   return (
     <div
       id="hero"
-      className="bg-primary-bg text-primary relative flex h-screen flex-col items-center justify-center px-1 text-center"
+      className="bg-primary-bg text-primary relative flex h-screen w-full flex-col items-center justify-center px-1 text-center"
     >
       <ParticlesAnimation />
       <h1 className="font-display z-5 text-4xl font-light sm:text-5xl md:text-6xl lg:text-7xl">

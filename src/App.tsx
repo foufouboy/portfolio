@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useInView, InView } from "react-intersection-observer";
 
 import About from "./sections/About";
@@ -7,17 +7,20 @@ import Around from "./sections/Around";
 import Contact from "./sections/Contact";
 import Hero from "./sections/Hero";
 import Nav from "./sections/Nav";
+import Footer from "./sections/Footer";
 
 import "./index.css";
 
 const sections = [<Hero />, <About />, <Projects />, <Around />, <Contact />];
 
 function App() {
-  const { ref, inView } = useInView({
-    threshold: 0.8,
-  });
+  const { ref, inView } = useInView();
+  const [visibleSection, setVisibleSection] = useState("hero");
+  let root;
 
-  const [visibleSection, setVisibleSection] = useState("#hero");
+  useEffect(() => {
+    root = document.querySelector("#root");
+  }, []);
 
   const setInView = (inView, entry) => {
     if (inView) {
@@ -31,12 +34,17 @@ function App() {
       {sections.map((section, index) => (
         <InView
           onChange={setInView}
-          threshold={0.8}
+          threshold={0.5}
+          root={root}
           key={`section_${index + 1}`}
         >
           {({ ref }) => {
             return (
-              <div id={`section_${index + 1}`} ref={ref}>
+              <div
+                id={`section_${index + 1}`}
+                ref={ref}
+                className="flex flex-col items-center"
+              >
                 {section}
               </div>
             );
@@ -44,6 +52,7 @@ function App() {
         </InView>
       ))}
       <Nav visibleSection={visibleSection} />
+      <Footer />
     </>
   );
 }
