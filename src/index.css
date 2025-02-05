@@ -88,17 +88,13 @@ html {
   box-sizing: border-box;
 }
 
-/* p,
-li {
-  @apply text-p sm:text-p-small md:text-p-md lg:text-p-lg;
-} */
-
 #root {
   font-family: "Inter", "system-ui", sans-serif;
   color: var(--color-primary);
   background: var(--color-primary-bg);
   display: grid;
   grid-template-columns: 1fr;
+  @apply text-p sm:text-p-small md:text-p-md lg:text-p-lg;
 }
 
 #tsparticles {
