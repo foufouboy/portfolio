@@ -61,8 +61,8 @@ export const projects = [
     title: "Yummy Memory",
     subtitle: "Memory card game",
     desc: "Front-end memory card game (single page app) realised with Vite/React and styled-components",
-    liveLink: "https://odin-mininotes-production.up.railway.app/",
-    repoLink: "https://github.com/foufouboy/odin-mininotes",
+    liveLink: "https://foufouboy.github.io/odin-memory-game/",
+    repoLink: "https://github.com/foufouboy/odin-memory-game",
     image: yummyImage,
   },
   {
@@ -70,7 +70,7 @@ export const projects = [
     subtitle: "Message board app",
     desc: "Message board app, implementing user authentication, realised using Express, Pug and PostgreSQL, and PassportJS",
     liveLink: "https://odin-mininotes-production.up.railway.app/",
-    repoLink: "https://github.com/foufouboy/odin-mininotes",
+    repoLink: "https://odin-members-only-production-bfe8.up.railway.app/",
     image: membersOnlyImage,
   },
 ];
