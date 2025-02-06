@@ -11,7 +11,7 @@ import Footer from "./sections/Footer";
 
 import "./index.css";
 
-const sections = [<Hero />, <About />, <Projects />, <Around />, <Contact />];
+const sections = [<Hero />, <About />, <Projects />, <Contact />];
 
 function App() {
   const { ref, inView } = useInView();

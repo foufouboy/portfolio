@@ -22,6 +22,8 @@
   --text-p-md: 1.1rem;
   --text-p-lg: 1.2rem;
 
+  --breakpoint-xs: 400px;
+
   /* ANIMATIONS */
 
   --animate-slide-from-left: slide-from-left 1.4s

@@ -1,3 +1,4 @@
+import ClassyButton from "../components/ClassyButton";
 import Subtitle from "../components/Subtitle";
 import { projects } from "../scripts/data";
 
@@ -5,7 +6,7 @@ function Projects() {
   return (
     <div
       id="projects"
-      className="flex max-w-[1550px] flex-col items-center self-center px-5"
+      className="flex max-w-[1550px] flex-col items-center self-center"
     >
       <Subtitle text="Projects" classes="" />
       <div className="projects-wrapper">
@@ -13,27 +14,42 @@ function Projects() {
           const odd = i % 2;
 
           return (
-            <div className={`project mb-[6rem] flex flex-col gap-4`}>
+            <div
+              className={`project mb-[6rem] flex items-center gap-4 ${odd ? "flex-row-reverse pl-5" : "pr-5"}`}
+            >
               <a
-                className={`project-image relative flex items-center justify-center bg-indigo-800 p-5 transition-transform hover:scale-95`}
+                className={`project-image relative flex basis-[60rem] items-center ${odd ? "justify-end pl-5" : "justify-start pr-5"} bg-[#3216BB] py-8 transition-transform hover:scale-95`}
                 href={project.liveLink}
                 target="_blank"
               >
                 <img
                   src={project.image}
                   alt="project image"
-                  className="h-[auto]"
+                  className="w-[90%]"
                 />
               </a>
-              <div className={`project-infos relative flex flex-col gap-3`}>
-                <div className="project-title text-xl font-bold">
-                  <h2>{project.title}</h2>
-                  <h2>{project.subtitle}</h2>
+              <div
+                className={`project-infos relative lg:bg-[unset] ${odd ? "xs:right-[-3.5rem] xs:ml-[-3rem] right-[-5rem] ml-[-5rem]" : "xs:left-[-3.5rem] xs:mr-[-3rem] left-[-5rem] mr-[-5rem]"} flex flex-col gap-3 bg-[rgba(26,26,26,0.5)] p-2 lg:gap-5`}
+              >
+                <div className="project-title xs:text-[.9rem] text-[.8rem] font-bold sm:text-xl md:text-2xl lg:text-3xl">
+                  <h3>{project.title}</h3>
+                  <h3>{project.subtitle}</h3>
                 </div>
                 <p className="project-description">{project.desc}</p>
-                <div className="project-links">
-                  <a href={project.liveLink}>LIVE APP</a>
-                  <a href={project.repoLink}>GITHUB REPO.</a>
+                <div className="project-links flex flex-col gap-5 tracking-wider">
+                  <a href={project.liveLink}>
+                    <ClassyButton
+                      type="button"
+                      classes="text-[.7rem] xs:text-[inherit]"
+                    >
+                      LIVE APP
+                    </ClassyButton>
+                  </a>
+                  <a href={project.repoLink}>
+                    <ClassyButton type="button" classes="text-[.7rem]">
+                      GITHUB REPO.
+                    </ClassyButton>
+                  </a>
                 </div>
               </div>
             </div>
