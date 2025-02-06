@@ -7,7 +7,7 @@ import { skills } from "../scripts/data";
 function About() {
   return (
     <div id="about" className="flex flex-col items-center px-[5%]">
-      <Subtitle text="About" />
+      <Subtitle text="About" classes="" />
       <div className="profile-wrapper flex max-w-[1200px] flex-col justify-between transition-[flex-direction] lg:w-full lg:gap-15 xl:flex-row">
         <div className="profile flex flex-col items-center">
           <div className="profile-picture to-primary-red mb-9 flex h-[9rem] w-[9rem] items-center justify-center rounded-full bg-linear-to-br from-blue-600 md:h-[11rem] md:w-[11rem] lg:h-[14rem] lg:w-[14rem] xl:h-[15rem] xl:w-[15rem]">

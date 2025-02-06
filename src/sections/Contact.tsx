@@ -45,11 +45,11 @@ function Contact() {
               required
               placeholder="Message"
               className="bg-nav-bg text-p lg:text-p-small w-full px-2 py-1 focus:outline-0"
-              rows="5"
+              rows={5}
             />
           </div>
         </div>
-        <ClassyButton type="submit" classes="mt-3 self-end">
+        <ClassyButton type="submit" classes="px-3 mt-3 self-end">
           Submit
         </ClassyButton>
       </form>

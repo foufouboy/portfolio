@@ -7,7 +7,7 @@ function Projects() {
       id="projects"
       className="flex max-w-[1550px] flex-col items-center self-center px-5"
     >
-      <Subtitle text="Projects" />
+      <Subtitle text="Projects" classes="" />
       <div className="projects-wrapper">
         {projects.map((project, i) => {
           const odd = i % 2;
