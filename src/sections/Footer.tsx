@@ -24,7 +24,7 @@ function Footer() {
       <p className="disclaimer text-p">ISSA CLEMENT ©2025</p>
       <a
         href="#hero"
-        className="scroll-back bg-primary-red absolute top-[-28px] right-1/2 flex h-12 w-10 translate-x-1/2 cursor-pointer items-center justify-center hover:animate-bounce"
+        className="scroll-back bg-primary-contrast absolute top-[-28px] right-1/2 flex h-12 w-10 translate-x-1/2 cursor-pointer items-center justify-center hover:animate-bounce"
       >
         <img src={chevronUp} alt="chevrons scroll-back" className="w-15 pb-1" />
       </a>

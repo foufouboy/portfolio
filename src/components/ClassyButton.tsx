@@ -7,7 +7,7 @@ function ClassyButton({ children, type, classes }) {
       <div className="content relative z-9 group-hover:text-black">
         {children}
       </div>
-      <div className="bg-primary-red absolute bottom-0 h-0.5 w-full transition-all duration-300 ease-in-out group-hover:h-full"></div>
+      <div className="bg-primary-contrast absolute bottom-0 h-0.5 w-full transition-all duration-300 ease-in-out group-hover:h-full"></div>
     </button>
   );
 }

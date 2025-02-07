@@ -18,7 +18,7 @@ function Projects() {
               className={`project mb-[6rem] flex items-center gap-4 ${odd ? "flex-row-reverse pl-5" : "pr-5"}`}
             >
               <a
-                className={`project-image relative flex basis-[60rem] items-center ${odd ? "justify-end pl-5" : "justify-start pr-5"} bg-[#3216BB] py-8 transition-transform hover:scale-95`}
+                className={`project-image relative flex basis-[60rem] items-center ${odd ? "justify-end pl-5" : "justify-start pr-5"} bg-primary-complementary py-8 opacity-80 shadow-2xl shadow-black transition-transform hover:scale-95`}
                 href={project.liveLink}
                 target="_blank"
               >
@@ -29,7 +29,7 @@ function Projects() {
                 />
               </a>
               <div
-                className={`project-infos relative lg:bg-[unset] ${odd ? "xs:right-[-3.5rem] xs:ml-[-3rem] right-[-5rem] ml-[-5rem]" : "xs:left-[-3.5rem] xs:mr-[-3rem] left-[-5rem] mr-[-5rem]"} flex flex-col gap-3 bg-[rgba(26,26,26,0.5)] p-2 lg:gap-5`}
+                className={`project-infos relative text-[#dbd9d9] lg:bg-[unset] ${odd ? "xs:right-[-3.5rem] xs:ml-[-3rem] right-[-5rem] ml-[-5rem]" : "xs:left-[-3.5rem] xs:mr-[-3rem] left-[-5rem] mr-[-5rem]"} flex flex-col gap-3 bg-[rgba(26,26,26,0.5)] p-2 lg:gap-5`}
               >
                 <div className="project-title xs:text-[.9rem] text-[.8rem] font-bold sm:text-xl md:text-2xl lg:text-3xl">
                   <h3>{project.title}</h3>
@@ -38,10 +38,7 @@ function Projects() {
                 <p className="project-description">{project.desc}</p>
                 <div className="project-links flex flex-col gap-5 tracking-wider">
                   <a href={project.liveLink}>
-                    <ClassyButton
-                      type="button"
-                      classes="text-[.7rem] xs:text-[inherit]"
-                    >
+                    <ClassyButton type="button" classes="text-[.7rem]">
                       LIVE APP
                     </ClassyButton>
                   </a>

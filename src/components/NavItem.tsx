@@ -1,7 +1,7 @@
 function NavItem({ text, link, active }) {
   return (
     <li
-      className={`font-[600] transition-colors duration-300 hover:text-red-500 ${active && "text-primary-red"} `}
+      className={`hover:text-primary-contrast font-[600] transition-colors duration-300 ${active && "text-primary-contrast"} `}
     >
       <a href={link}>{text}</a>
     </li>

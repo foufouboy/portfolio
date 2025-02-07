@@ -29,7 +29,7 @@ function About() {
             <div
               className={`profile relative left-0 flex flex-col items-center transition-all duration-1500 ${!animated && "lg:left-[-400px] lg:opacity-0"}`}
             >
-              <div className="profile-picture to-primary-red mb-9 flex h-[9rem] w-[9rem] items-center justify-center rounded-full bg-linear-to-br from-blue-600 md:h-[11rem] md:w-[11rem] lg:h-[14rem] lg:w-[14rem] xl:h-[15rem] xl:w-[15rem]">
+              <div className="profile-picture mb-9 flex h-[9rem] w-[9rem] items-center justify-center rounded-full bg-linear-to-br/srgb from-[#db4141] to-[#0fc2cf] md:h-[11rem] md:w-[11rem] lg:h-[14rem] lg:w-[14rem] xl:h-[15rem] xl:w-[15rem]">
                 <img
                   src={profileImg}
                   alt="profile picture"
