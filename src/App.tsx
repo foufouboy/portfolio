@@ -3,7 +3,6 @@ import { useInView, InView } from "react-intersection-observer";
 
 import About from "./sections/About";
 import Projects from "./sections/Projects";
-import Around from "./sections/Around";
 import Contact from "./sections/Contact";
 import Hero from "./sections/Hero";
 import Nav from "./sections/Nav";
