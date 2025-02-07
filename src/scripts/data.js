@@ -21,6 +21,14 @@ export const navItems = [
   { title: "Contact", link: "contact" },
 ];
 
+export const presentation = `Self-taught fullstack developer, mainly focused on JavaScript, with
+  experience on Express and React frameworks. Passionate about
+  technology and the impact that IT and the web have on our society,
+  I've been self-taught in web development for a few years now; I'm
+  now looking for an internship to finally get my first real work
+  experience.
+`;
+
 export const skills = [
   [
     { name: "HTML", icon: htmlIcon },
@@ -69,7 +77,7 @@ export const projects = [
     title: "Members Only",
     subtitle: "Message board app",
     desc: "Message board app, implementing user authentication, realised using Express, Pug and PostgreSQL, and PassportJS",
-    liveLink: "https://odin-mininotes-production.up.railway.app/",
+    liveLink: "https://odin-members-only-production-bfe8.up.railway.app/",
     repoLink: "https://odin-members-only-production-bfe8.up.railway.app/",
     image: membersOnlyImage,
   },

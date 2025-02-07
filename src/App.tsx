@@ -16,15 +16,9 @@ const sections = [<Hero />, <About />, <Projects />, <Contact />];
 function App() {
   const { ref, inView } = useInView();
   const [visibleSection, setVisibleSection] = useState("hero");
-  let root;
-
-  useEffect(() => {
-    root = document.querySelector("#root");
-  }, []);
 
   const setInView = (inView, entry) => {
     if (inView) {
-      console.log(entry.target.firstChild.getAttribute("id"));
       setVisibleSection(entry.target.firstChild.getAttribute("id"));
     }
   };
@@ -34,8 +28,7 @@ function App() {
       {sections.map((section, index) => (
         <InView
           onChange={setInView}
-          threshold={0.5}
-          root={root}
+          threshold={0.2}
           key={`section_${index + 1}`}
         >
           {({ ref }) => {
