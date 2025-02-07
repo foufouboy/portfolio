@@ -51,7 +51,7 @@ function About() {
                       return (
                         <div
                           key={skill + "_" + index}
-                          className={`skill flex w-[80px] flex-col items-center justify-center gap-1 rounded-xl transition-opacity delay-1000 duration-1500 ease-in-out sm:w-[100px] md:w-[120px] lg:w-[150px] xl:w-[170px] ${!animated && "opacity-0"}`}
+                          className={`skill flex w-[80px] flex-col items-center justify-center gap-1 rounded-xl transition-opacity delay-1000 duration-1500 ease-in-out sm:w-[100px] md:w-[120px] lg:w-[150px] xl:w-[170px] ${!animated && "lg:opacity-0"}`}
                         >
                           <img
                             src={skill.icon}
