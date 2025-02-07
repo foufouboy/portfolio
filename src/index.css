@@ -9,12 +9,12 @@
 @theme {
   --font-display: "Inter", "system-ui", sans-serif;
 
-  --color-primary: #fafafa;
-  --color-primary-red: #ff4d5a;
-  --color-dark-red: #bb3741;
+  --color-primary: #c5c5cc;
+  --color-primary-red: #fff787;
+  --color-dark-red: #977086;
   --color-primary-purple: #3216bb;
-  --color-primary-bg: #1a1a1a;
-  --color-nav-bg: #272727;
+  --color-primary-bg: #001324;
+  --color-nav-bg: #012a61;
   --color-primary-gradient: linear-gradient(135deg, #12cbc4 10%, #c4e538 100%);
 
   --text-p: 0.8rem;
@@ -115,9 +115,13 @@ html {
   align-items: center;
   border: double 3px transparent;
   border-image-slice: 1;
-  border-width: 2px;
-  background-image: linear-gradient(#1a1a1a, #1a1a1a),
-    radial-gradient(circle at top left, #51a2e9, #ff4d5a);
+  border-width: 3px;
+  background-image: linear-gradient(var(--color-nav-bg), var(--color-nav-bg)),
+    radial-gradient(
+      circle at top left,
+      var(--color-primary-red),
+      var(--color-primary)
+    );
   background-origin: border-box;
   background-clip: content-box, border-box;
 }
