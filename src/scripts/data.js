@@ -61,7 +61,8 @@ export const projects = [
     title: "Babel",
     subtitle: "Book listing app",
     desc: "Front-end book listing multi-page app, realised with Vite/React, React Router, and styled-components",
-    liveLink: "https://odin-book-shop.vercel.app/library",
+    liveLink:
+      "https://odin-book-shop-99ibi14id-foufouboys-projects.vercel.app/",
     repoLink: "https://github.com/foufouboy/odin-book-shop",
     image: babelImage,
   },
