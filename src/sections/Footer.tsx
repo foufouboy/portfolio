@@ -14,7 +14,7 @@ function Footer() {
           <img src={githubIcon} alt="Github link" className="w-[36px]" />
         </a>
         <a
-          href="mailto:cissaclement@gmail.com"
+          href="mailto:issaclement.pro@gmail.com"
           target="_blank"
           className="transition-transform duration-300 hover:scale-125"
         >
